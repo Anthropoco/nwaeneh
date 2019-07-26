@@ -108,13 +108,32 @@
         header h1 {
             margin: 0;
         }
+        
+        .logo-pre-head,
+        .logo-post-head {
+            background-image: url('images/spiral-lines.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 4em;
+            width: 7em;
+            /* margin-bottom: -1em; */
+        }
+        
+        .logo-post-head {
+            transform: rotate(180deg);
+            /* margin-bottom: 0; */
+            /* margin-top: -1em; */
+        }
     </style>
 </head>
 
 <body>
     <header>
         <span class="open-button">&#9776;</span>
+        <span class="logo-pre-head"></span>
         <h1>Eneh Anthony</h1>
+        <span class="logo-post-head"></span>
         <div class="ihembuga">
             <a href="portfolio">Web Developer</a>
             <a href="music">Choir Director</a>
