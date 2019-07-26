@@ -89,8 +89,10 @@
         }
         
         footer {
-            padding: 1em;
+            padding: 0 1em;
             text-align: center;
+            background-color: rgb(89, 116, 77);
+            font-size: small;
         }
         
         header .ihembuga a {
@@ -132,21 +134,21 @@
     <header>
         <span class="open-button">&#9776;</span>
         <span class="logo-pre-head"></span>
-        <h1>Eneh Anthony</h1>
+        <h1>Eneh anthonY</h1>
         <span class="logo-post-head"></span>
         <div class="ihembuga">
-            <a href="portfolio">Web Developer</a>
-            <a href="music">Choir Director</a>
-            <a href="https://www.google.com/?q=browserer" target="_blank">Blog</a>
+            <a href="#portfolio">Web Developer</a>
+            <a href="#music">Choral Director</a>
+            <a href="https://www.google.com/?q=browserer" target="_blank">Article Writer</a>
         </div>
     </header>
     <main>
         <aside>
             <span class="close-button">&times;</span>
             <nav>
-                <a href="#">About</a>
-                <a href="portfolio">Portfolio</a>
-                <a href="music">Music</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#music">Music</a>
             </nav>
             <span class="social-links">
                 <a href="https://twitter.com/nwa_eneh">twitter</a>
@@ -157,6 +159,8 @@
         </aside>
         <div class="body">
             <div class="about">
+                <a id="about"></a>
+                <h2>About</h2>
                 <p>Hi, I am Eneh Anthony. I enjoy tinkering with and creating websites such as <a href="portfolio">these</a>. My second love is singing Choral music. YOu can check oout my Youtube Channel <a href="https://youtube.com/channel/UC09PNf1r8a22-qmS29jNZ0g"
                         target="_blank">Black Chorales</a> for a collection of Chorale music from different choirs here in Africa.
                 </p>
@@ -164,6 +168,8 @@
                 <p>Lastly, lemme mention that I run a wordpress <a href="#">blog</a> where I pen down my deepest thoughts. Do check it out and drop a kind word or two.</p>
             </div>
             <div class="portfolio">
+                <a id="portfolio"></a>
+                <h2>Previous Works</h2>
                 <div class="portfolio-project">
                     <h3>Javascript 30</h3>
                     <div class="project-image">
@@ -194,7 +200,11 @@
 
                 </div>
             </div>
-            <div class="music">We do some cool stuff at our Chorale group VoA Chorale! Check out our Youtube videos.</div>
+            <div class="music">
+                <a id="music"></a>
+                <h2>Music</h2>
+                <p>We do some cool stuff at our Chorale group VoA Chorale! Check out our Youtube videos.</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -208,7 +218,6 @@
             </span>
         </p>
     </footer>
-
 </body>
 
 </html>
