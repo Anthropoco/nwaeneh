@@ -46,7 +46,8 @@
             background-color: gold;
             color: black;
             padding: 2px;
-            display: none;
+            margin-left: -100%;
+            transition: margin .6s;
         }
         
         main aside nav {
@@ -165,6 +166,10 @@
             position: absolute;
             top: 0;
         }
+        
+        .slide-out {
+            margin-left: 0;
+        }
     </style>
 </head>
 
@@ -268,6 +273,18 @@
             </span>
         </p>
     </footer>
+    <script>
+        const openButton = document.querySelector('.open-button');
+        const closeButton = document.querySelector('.close-button');
+        const pushOutMenu = document.querySelector('aside');
+
+        const togglePushOutMenu = (e) => {
+            pushOutMenu.classList.toggle('slide-out');
+        }
+
+        openButton.addEventListener('click', togglePushOutMenu);
+        closeButton.addEventListener('click', togglePushOutMenu);
+    </script>
 </body>
 
 </html>
