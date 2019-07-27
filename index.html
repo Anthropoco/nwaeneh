@@ -43,10 +43,10 @@
             left: 0;
             width: 80vw;
             height: 100vh;
-            background-color: gold;
+            background-color: rgb(89, 116, 77);
             color: black;
             padding: 2px;
-            display: none;
+            /* display: none; */
         }
         
         main aside nav {
@@ -56,10 +56,18 @@
         main aside a {
             background-color: rgba(255, 255, 255, .4);
             margin: 1px;
-            padding-left: 1em;
             color: black;
             box-shadow: black 2px 2px;
             border: 1px solid black;
+        }
+        
+        main aside .social-links {
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            width: 75vw;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         
         a {
@@ -67,8 +75,13 @@
             color: rgb(253, 229, 90);
         }
         
-        nav a {
+        main aside nav a {
             display: block;
+            padding-left: 1em;
+        }
+        
+        main aside .social-links a {
+            padding: 0 .5ex;
         }
         
         .open-button,
