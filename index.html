@@ -1,303 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>nwa_eneh's Corner</title>
     <style>
-        /* this stylesheet utilizes mobile first design*/
-        
-        body,
-        html {
-            padding: 0;
-            margin: 0;
-        }
-        
-        body {
-            /* background-image: linear-gradient(rgb(198, 240, 210) 0%, rgb(186, 213, 235) 30%, rgb(128, 202, 236) 50%, rgb(95, 181, 240) 70%, rgb(74, 175, 243) 100%) */
-            background-color: rgb(59, 59, 59);
-            color: white;
-            font-size: large;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            line-height: 2;
-        }
-        
-        header {
-            background-color: rgb(22, 22, 22);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1em;
-        }
-        
-        main {
-            padding: 1em;
-            text-align: justify;
-        }
-        
-        main aside {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 80vw;
-            height: 100vh;
-            background-color: rgb(89, 116, 77);
-            color: black;
-            padding: 2px;
-            margin-left: -100%;
-            transition: margin .6s;
-        }
-        
-        main aside nav {
-            margin-top: 2.5em;
-        }
-        
-        main aside a {
-            background-color: rgba(255, 255, 255, .4);
-            margin: 1px;
-            color: black;
-            box-shadow: black 2px 2px;
-            border: 1px solid black;
-        }
-        
-        main aside .social-links {
-            position: absolute;
-            bottom: 10px;
-            display: flex;
-            width: 75vw;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        a {
-            text-decoration: none;
-            color: rgb(253, 229, 90);
-        }
-        
-        main aside nav a {
-            display: block;
-            padding-left: 1em;
-        }
-        
-        main aside .social-links a {
-            padding: 0 .5ex;
-        }
-        
-        .open-button,
-        .close-button {
-            font-size: xx-large;
-            font-weight: bolder;
-            line-height: 1;
-        }
-        
-        .close-button {
-            position: absolute;
-            top: 0;
-            right: 10px;
-        }
-        
-        .open-button {
-            align-self: flex-start;
-        }
-        
-        footer {
-            padding: 0 1em;
-            text-align: center;
-            background-color: rgb(89, 116, 77);
-            font-size: small;
-        }
-        
-        header .ihembuga a {
-            border-right: solid 2px rgb(253, 229, 90);
-            padding: .5ex 1ex .5ex 0;
-            /* font-size: medium; */
-            font-variant-caps: all-small-caps;
-        }
-        
-        header .ihembuga a:last-of-type {
-            border-right: none;
-            padding-right: 0;
-        }
-        
-        header h1 {
-            margin: 0;
-        }
-        
-        .logo-pre-head,
-        .logo-post-head {
-            background-image: url('images/spiral-lines.png');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 4em;
-            width: 7em;
-            /* margin-bottom: -1em; */
-        }
-        
-        .logo-post-head {
-            transform: rotate(180deg);
-            /* margin-bottom: 0; */
-            /* margin-top: -1em; */
-        }
-        
-        .section h2 {
-            /* background-image: url('images/section-bg1.jpg'); */
-            color: black;
-            margin-left: 5px;
-            stroke: 4px solid;
-        }
-        
-        .section .title-bg {
-            /* height: 1.6em; */
-            margin-top: -3.6em;
-            position: relative;
-            z-index: -1;
-            height: 1.6em;
-        }
-        
-        .section .title-bg :first-child {
-            content: '';
-            display: inline-block;
-            height: 1em;
-            width: 10em;
-            background-color: rgb(89, 116, 77);
-            position: absolute;
-            bottom: 0;
-            /* z-index: -2; */
-        }
-        
-        .section .title-bg :nth-child(2) {
-            height: 0;
-            width: 7em;
-            border-bottom: 1.6em solid gold;
-            border-right: 1em solid transparent;
-            /* position: relative; */
-            /* margin-top: -3.6em; */
-            /* z-index: -1; */
-            position: absolute;
-            top: 0;
-        }
-        
-        .slide-out {
-            margin-left: 0;
-        }
-    </style>
-</head>
+      /* this stylesheet utilizes mobile first design*/
 
-<body>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        /* background-image: linear-gradient(rgb(198, 240, 210) 0%, rgb(186, 213, 235) 30%, rgb(128, 202, 236) 50%, rgb(95, 181, 240) 70%, rgb(74, 175, 243) 100%) */
+        background-color: rgb(59, 59, 59);
+        color: white;
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 2;
+      }
+
+      header {
+        background-color: rgb(22, 22, 22);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+      }
+
+      main {
+        padding: 1em;
+        text-align: justify;
+      }
+
+      main aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80vw;
+        height: 100vh;
+        background-color: rgb(89, 116, 77);
+        color: black;
+        padding: 2px;
+        margin-left: -100%;
+        transition: margin 0.6s;
+      }
+
+      main aside nav {
+        margin-top: 2.5em;
+      }
+
+      main aside a {
+        background-color: rgba(255, 255, 255, 0.4);
+        margin: 1px;
+        color: black;
+        box-shadow: black 2px 2px;
+        border: 1px solid black;
+      }
+
+      main aside .social-links {
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        width: 75vw;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(253, 229, 90);
+      }
+
+      main aside nav a {
+        display: block;
+        padding-left: 1em;
+      }
+
+      main aside .social-links a {
+        padding: 0 0.5ex;
+      }
+
+      .open-button,
+      .close-button {
+        font-size: xx-large;
+        font-weight: bolder;
+        line-height: 1;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+
+      .open-button {
+        align-self: flex-start;
+      }
+
+      footer {
+        padding: 0 1em;
+        text-align: center;
+        background-color: rgb(89, 116, 77);
+        font-size: small;
+      }
+
+      header .ihembuga a {
+        border-right: solid 2px rgb(253, 229, 90);
+        padding: 0.5ex 1ex 0.5ex 0;
+        /* font-size: medium; */
+        font-variant-caps: all-small-caps;
+      }
+
+      header .ihembuga a:last-of-type {
+        border-right: none;
+        padding-right: 0;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      .logo-pre-head,
+      .logo-post-head {
+        background-image: url('images/spiral-lines.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 4em;
+        width: 7em;
+        /* margin-bottom: -1em; */
+      }
+
+      .logo-post-head {
+        transform: rotate(180deg);
+        /* margin-bottom: 0; */
+        /* margin-top: -1em; */
+      }
+
+      .section h2 {
+        /* background-image: url('images/section-bg1.jpg'); */
+        color: black;
+        margin-left: 5px;
+        stroke: 4px solid;
+      }
+
+      .section .title-bg {
+        /* height: 1.6em; */
+        margin-top: -3.6em;
+        position: relative;
+        z-index: -1;
+        height: 1.6em;
+      }
+
+      .section .title-bg :first-child {
+        content: '';
+        display: inline-block;
+        height: 1em;
+        width: 10em;
+        background-color: rgb(89, 116, 77);
+        position: absolute;
+        bottom: 0;
+        /* z-index: -2; */
+      }
+
+      .section .title-bg :nth-child(2) {
+        height: 0;
+        width: 7em;
+        border-bottom: 1.6em solid gold;
+        border-right: 1em solid transparent;
+        /* position: relative; */
+        /* margin-top: -3.6em; */
+        /* z-index: -1; */
+        position: absolute;
+        top: 0;
+      }
+
+      .slide-out {
+        margin-left: 0;
+      }
+    </style>
+  </head>
+
+  <body>
     <header>
-        <span class="open-button">&#9776;</span>
-        <span class="logo-pre-head"></span>
-        <h1>Eneh anthonY</h1>
-        <span class="logo-post-head"></span>
-        <div class="ihembuga">
-            <a href="#portfolio">Web Developer</a>
-            <a href="#music">Choral Director</a>
-            <a href="https://www.google.com/?q=browserer" target="_blank">Article Writer</a>
-        </div>
+      <span class="open-button">&#9776;</span>
+      <span class="logo-pre-head"></span>
+      <h1>Eneh anthonY</h1>
+      <span class="logo-post-head"></span>
+      <div class="ihembuga">
+        <a href="#portfolio">Web Developer</a>
+        <a href="#music">Choral Director</a>
+        <a href="https://www.google.com/?q=browserer" target="_blank"
+          >Article Writer</a
+        >
+      </div>
     </header>
     <main>
-        <aside>
-            <span class="close-button">&times;</span>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#music">Music</a>
-            </nav>
-            <span class="social-links">
-                <a href="https://twitter.com/nwa_eneh">twitter</a>
-                <a href="https://facebook.com/aeneh1">facebook</a>
-                <a href="https://instagram.com/anthropocology">instagram</a>
-                <a href="https://github.com/Anthropoco">github</a>
-            </span>
-        </aside>
-        <div class="body">
-            <div class="about section">
-                <a id="about"></a>
-                <h2>About</h2>
-                <div class="title-bg">
-                    <div></div>
-                    <div></div>
-                </div>
-                <p>Hi, I am Eneh Anthony. I enjoy tinkering with and creating websites such as <a href="portfolio">these</a>. My second love is singing Choral music. YOu can check oout my Youtube Channel <a href="https://youtube.com/channel/UC09PNf1r8a22-qmS29jNZ0g"
-                        target="_blank">Black Chorales</a> for a collection of Chorale music from different choirs here in Africa.
-                </p>
-                <p>And Oh! I love browsing the internet for hours on end. What's the English word for a person like that? Browser? Browserer? <span>TODO:shrugicon:</span></p>
-                <p>Lastly, lemme mention that I run a wordpress <a href="#">blog</a> where I pen down my deepest thoughts. Do check it out and drop a kind word or two.</p>
-            </div>
-            <div class="portfolio section">
-                <a id="portfolio"></a>
-                <h2>Previous Works</h2>
-                <div class="title-bg">
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="portfolio-project">
-                    <h3>Javascript 30</h3>
-                    <div class="project-image">
-                        <img src="images/js30.jpg" alt="Javascript 30 project">
-                        <span class="caption">JS 30 Components</span>
-                    </div>
-                    <span class="tags">web application,vanilla JS</span>
-                    <p>Here is a collection of 30 UI components, games, voice recognition app, video maker and other useful, fun stuff.They are my own implementation of the original JS30 project ideas which started by one of my web development mentors
-                        <a href="https://twitter.com/@wesbos">@wesbos</a> .</p>
-                </div>
-                <div class="portfolio-project">
-                    <h3>Social Media Aggregator</h3>
-                    <div class="project-image">
-                        <img src="images/social-media-aggregator.jpg" alt="Social Media Aggregator">
-                        <span class="caption">Your Social feeds</span>
-                    </div>
-                    <span class="tags">facebook, twitter and youtube APIs, video, weba app, streaming, nodejs</span>
-                    <p>This is a little utility tool of a site for me. One place for all my social feeds instead of jumping around the net. Again people don't get to see when I am 'online' <span>TODO:laughsicon:</span></p>
-                </div>
-                <div class="portfolio-project">
-                    <h3>Voice of Angels Chorale</h3>
-                    <div class="project-image">
-                        <img src="images/voa-chorale.jpg" alt="Voice of Angels Chorale">
-                        <span class="caption">Sonorous is our name</span>
-                    </div>
-                    <span class="tags">jQuery, react, wordpress, streaming</span>
-                    <p>This is an organization website. Built for a chorale group. Features their picture gallery, videos, contact info and about pages. Used a lot of cool annimations via jquery animation library.</p>
-
-                </div>
-            </div>
-            <div class="music section">
-                <a id="music"></a>
-                <h2>Music</h2>
-                <div class="title-bg">
-                    <div></div>
-                    <div></div>
-                </div>
-                <p>We do some cool stuff at our Chorale group VoA Chorale! Check out our Youtube videos.</p>
-            </div>
+      <aside>
+        <span class="close-button">&times;</span>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#music">Music</a>
+        </nav>
+        <span class="social-links">
+          <a href="https://twitter.com/nwa_eneh">twitter</a>
+          <a href="https://facebook.com/aeneh1">facebook</a>
+          <a href="https://instagram.com/anthropocology">instagram</a>
+          <a href="https://github.com/Anthropoco">github</a>
+        </span>
+      </aside>
+      <div class="body">
+        <div class="about section">
+          <a id="about"></a>
+          <h2>About</h2>
+          <div class="title-bg">
+            <div></div>
+            <div></div>
+          </div>
+          <p>
+            Hi, I am Eneh Anthony. I enjoy tinkering with and creating websites
+            such as <a href="portfolio">these</a>. My second love is singing
+            Choral music. YOu can check oout my Youtube Channel
+            <a
+              href="https://youtube.com/channel/UC09PNf1r8a22-qmS29jNZ0g"
+              target="_blank"
+              >Black Chorales</a
+            >
+            for a collection of Chorale music from different choirs here in
+            Africa.
+          </p>
+          <p>
+            And Oh! I love browsing the internet for hours on end. What's the
+            English word for a person like that? Browser? Browserer?
+            <span>TODO:shrugicon:</span>
+          </p>
+          <p>
+            Lastly, lemme mention that I run a wordpress
+            <a href="#">blog</a> where I pen down my deepest thoughts. Do check
+            it out and drop a kind word or two.
+          </p>
         </div>
+        <div class="portfolio section">
+          <a id="portfolio"></a>
+          <h2>Previous Works</h2>
+          <div class="title-bg">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="portfolio-project">
+            <h3>Javascript 30</h3>
+            <div class="project-image">
+              <img src="images/js30.jpg" alt="Javascript 30 project" />
+              <span class="caption">JS 30 Components</span>
+            </div>
+            <span class="tags">web application,vanilla JS</span>
+            <p>
+              Here is a collection of 30 UI components, games, voice recognition
+              app, video maker and other useful, fun stuff.They are my own
+              implementation of the original JS30 project ideas which started by
+              one of my web development mentors
+              <a href="https://twitter.com/@wesbos">@wesbos</a> .
+            </p>
+          </div>
+          <div class="portfolio-project">
+            <h3>Social Media Aggregator</h3>
+            <div class="project-image">
+              <img
+                src="images/social-media-aggregator.jpg"
+                alt="Social Media Aggregator"
+              />
+              <span class="caption">Your Social feeds</span>
+            </div>
+            <span class="tags"
+              >facebook, twitter and youtube APIs, video, weba app, streaming,
+              nodejs</span
+            >
+            <p>
+              This is a little utility tool of a site for me. One place for all
+              my social feeds instead of jumping around the net. Again people
+              don't get to see when I am 'online' <span>TODO:laughsicon:</span>
+            </p>
+          </div>
+          <div class="portfolio-project">
+            <h3>Voice of Angels Chorale</h3>
+            <div class="project-image">
+              <img src="images/voa-chorale.jpg" alt="Voice of Angels Chorale" />
+              <span class="caption">Sonorous is our name</span>
+            </div>
+            <span class="tags">jQuery, react, wordpress, streaming</span>
+            <p>
+              This is an organization website. Built for a chorale group.
+              Features their picture gallery, videos, contact info and about
+              pages. Used a lot of cool annimations via jquery animation
+              library.
+            </p>
+          </div>
+        </div>
+        <div class="music section">
+          <a id="music"></a>
+          <h2>Music</h2>
+          <div class="title-bg">
+            <div></div>
+            <div></div>
+          </div>
+          <p>
+            We do some cool stuff at our Chorale group VoA Chorale! Check out
+            our Youtube videos.
+          </p>
+        </div>
+      </div>
     </main>
     <footer>
-        <p>
-            <span class="copyright">2019</span> Let's Tango
-            <span class="social-links">
-                <a href="https://twitter.com/nwa_eneh">twitter</a>
-                <a href="https://facebook.com/aeneh1">facebook</a>
-                <a href="https://instagram.com/anthropocology">instagram</a>
-                <a href="https://github.com/Anthropoco">github</a>
-            </span>
-        </p>
+      <p>
+        <span class="copyright">2019</span> Let's Tango
+        <span class="social-links">
+          <a href="https://twitter.com/nwa_eneh">twitter</a>
+          <a href="https://facebook.com/aeneh1">facebook</a>
+          <a href="https://instagram.com/anthropocology">instagram</a>
+          <a href="https://github.com/Anthropoco">github</a>
+        </span>
+      </p>
     </footer>
     <script>
-        const openButton = document.querySelector('.open-button');
-        const closeButton = document.querySelector('.close-button');
-        const pushOutMenu = document.querySelector('aside');
+      const openButton = document.querySelector('.open-button');
+      const closeButton = document.querySelector('.close-button');
+      const pushOutMenu = document.querySelector('aside');
 
-        const togglePushOutMenu = (e) => {
-            pushOutMenu.classList.toggle('slide-out');
-        }
+      const togglePushOutMenu = (e) => {
+        pushOutMenu.classList.toggle('slide-out');
+      };
 
-        openButton.addEventListener('click', togglePushOutMenu);
-        closeButton.addEventListener('click', togglePushOutMenu);
+      openButton.addEventListener('click', togglePushOutMenu);
+      closeButton.addEventListener('click', togglePushOutMenu);
     </script>
-</body>
-
+  </body>
 </html>
