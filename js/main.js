@@ -266,6 +266,6 @@ AOS.init({
 
   //   set 'hire me' link hrefs
   const hireMeLink =
-    "mailto:info@nwaeneh.com?subject=I%20want%20to%20hire%20you&body=I%20am%20%3Cname%3E%0D%0A%0D%0AWhat%20I%20want%20you%20to%20do%20for%20me%20(delete%20the%20lines%20that%20don't%20describe%20what%20you%20want)%0D%0A-%20work%20full%20time%20for%20my%20company%0D%0A-%20consult%20for%20my%20company%0D%0A-%20build%20an%20mobile%20app%0D%0A-%20build%20a%20website%2Fwebapp%0D%0A-%20other%0D%0A%0D%0ABrief%20description%20of%20the%20project%2Fneed%2Fproblem%0D%0A-%0D%0A%0D%0ABest%20regards%0D%0A%0D%0A%0D%0A";
+    "mailto:aeneh90@gmail.com?subject=I%20want%20to%20hire%20you&body=I%20am%20%3Cname%3E%0D%0A%0D%0AWhat%20I%20want%20you%20to%20do%20for%20me%20(delete%20the%20lines%20that%20don't%20describe%20what%20you%20want)%0D%0A-%20work%20full%20time%20for%20my%20company%0D%0A-%20consult%20for%20my%20company%0D%0A-%20build%20an%20mobile%20app%0D%0A-%20build%20a%20website%2Fwebapp%0D%0A-%20other%0D%0A%0D%0ABrief%20description%20of%20the%20project%2Fneed%2Fproblem%0D%0A-%0D%0A%0D%0ABest%20regards%0D%0A%0D%0A%0D%0A";
   $('.hire-me-link').attr('href', hireMeLink);
 })(jQuery);
